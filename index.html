@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attendance Management System</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Attendance Management System</h1>
+
+      <!-- Form to add student -->
+      <div class="add-student">
+        <input type="text" id="student-name" placeholder="Enter Student Name" />
+        <button id="add-student-btn">Add Student</button>
+      </div>
+      <label for="custom-date">Select Date:</label>
+      <input type="date" id="custom-date" />
+
+      <table id="attendance-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Date</th>
+            <th>Period 1</th>
+            <th>Period 2</th>
+            <th>Period 3</th>
+            <th>Period 4</th>
+            <th>Period 5</th>
+            <th>Period 6</th>
+            <th>Period 7</th>
+            <th>Attendance %</th>
+            <th>Action</th>
+            <!-- Column for remove button -->
+          </tr>
+        </thead>
+        <tbody id="attendance-body">
+          <!-- Rows will be dynamically populated -->
+        </tbody>
+      </table>
+
+      <div class="controls">
+        <button id="next-day-btn">Next Day</button>
+        <button id="skip-day-btn">Skip Day</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
